@@ -13,7 +13,6 @@ function App() {
   };
 
   return (
-    
     <div className="app">
       <h1>Expense Tracker</h1>
       <div className="balance">
@@ -22,7 +21,6 @@ function App() {
       <ExpenseForm addExpense={addExpense} />
       <ExpenseList expenses={expenses} />
     </div>
-
   );
 }
 

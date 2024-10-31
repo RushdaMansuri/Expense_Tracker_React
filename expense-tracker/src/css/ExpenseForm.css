@@ -1,28 +1,47 @@
+/* Form container styling */
 .expense-form {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-  
-  .expense-form input {
-    margin: 0 10px;
-    padding: 8px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .expense-form button {
-    padding: 8px 16px;
-    font-size: 16px;
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .expense-form button:hover {
-    background-color: #45a049;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 500px;
+  background-color: #f9f9fb;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 24px;
+}
+
+/* Input field styling */
+.expense-form input {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+}
+
+.expense-form input:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+/* Button styling */
+.expense-form button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.expense-form button:hover {
+  background-color: #45a049;
+}
