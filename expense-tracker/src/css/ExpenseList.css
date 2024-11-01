@@ -1,14 +1,27 @@
+/* ExpenseList.css */
+
+/* Page background */
+.expense-page {
+  background-color: #f5f5dc; /* Light beige */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+  padding: 20px;
+}
+
 /* Container styling */
 .expense-list {
+  background-color: #fdf5e6; /* Light beige tint */
   margin: 0 auto;
   max-width: 500px;
   padding: 20px;
-  background-color: #f9f9fb;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Header styling */
+/* Header within list */
 .expense-list h3 {
   text-align: center;
   color: #333;
@@ -30,7 +43,7 @@
   align-items: center;
   padding: 12px 16px;
   margin-bottom: 8px;
-  background-color: #ffffff;
+  background-color: #fffaf0; /* Complementary off-white color */
   border-radius: 6px;
   transition: box-shadow 0.2s ease;
   border: 1px solid #e0e0e0;
@@ -50,6 +63,6 @@
 /* Amount styling */
 .expense-amount {
   font-size: 1.1rem;
-  color: #ff5722;
+  color: #d2691e; /* Chocolate color */
   font-weight: 600;
 }
