@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './App.css';
-import ExpenseForm from './components/ExpenseForm';
 import ExpenseList from './components/ExpenseList';
 
 function App() {
@@ -14,12 +13,8 @@ function App() {
 
   return (
     <div className="app">
-      <h1>Expense Tracker</h1>
-      <div className="balance">
-        <h2>Balance: ${balance.toFixed(2)}</h2>
-      </div>
-      <ExpenseForm addExpense={addExpense} />
-      <ExpenseList expenses={expenses} />
+      {/* Pass both expenses and addExpense as props */}
+      <ExpenseList initialExpenses={expenses} addExpense={addExpense} />
     </div>
   );
 }

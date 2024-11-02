@@ -1,15 +1,18 @@
 /* Footer.css */
 .expense-footer {
-    background-color: #8b4513;
-    width: 100%;
-    padding: 10px 0;
-    text-align: center;
-    color: #fff;
-    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2);
-  }
-  
-  .expense-footer p {
-    margin: 0;
-    font-size: 0.9rem;
-  }
-  
+  background-color: #8b4513; /* SaddleBrown color */
+  width: 100%;
+  padding: 15px 0; /* Increased padding for more height */
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.expense-footer p {
+  margin: 0;
+  font-size: 1rem;
+}

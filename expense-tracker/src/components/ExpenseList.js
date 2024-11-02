@@ -1,10 +1,16 @@
-// ExpenseList.js
-import React from 'react';
+import React, { useState } from 'react';
 import Header from './Header';
 import Footer from './Footer';
+import ExpenseForm from './ExpenseForm';
 import '../css/ExpenseList.css';
 
-const ExpenseList = ({ expenses }) => {
+const ExpenseList = ({ initialExpenses = [] }) => { // Default to an empty array
+  const [expenses, setExpenses] = useState(initialExpenses);
+
+  const addExpense = (newExpense) => {
+    setExpenses([...expenses, newExpense]);
+  };
+
   return (
     <div className="expense-page">
       <Header />
@@ -18,6 +24,7 @@ const ExpenseList = ({ expenses }) => {
             </li>
           ))}
         </ul>
+        <ExpenseForm addExpense={addExpense} />
       </main>
       <Footer />
     </div>

@@ -1,15 +1,23 @@
 /* Header.css */
 .expense-header {
-    background-color: #8b4513; /* SaddleBrown color */
-    width: 100%;
-    padding: 15px 0;
-    text-align: center;
-    color: #fff;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-  }
-  
-  .expense-header h1 {
-    font-size: 2rem;
-    margin: 0;
-  }
-  
+  background-color: #8b4513; /* SaddleBrown color */
+  width: 100%;
+  padding: 15px 0;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.expense-header h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+/* Additional padding for main content to avoid overlap with header */
+.expense-page {
+  padding-top: 60px; /* Adjust based on header height */
+}

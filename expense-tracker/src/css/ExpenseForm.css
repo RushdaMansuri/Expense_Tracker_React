@@ -4,9 +4,9 @@
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  margin: 0 auto;
-  max-width: 500px;
-  background-color: #f9f9fb;
+  margin: 40px auto; /* Added margin-top for spacing from the top */
+
+  background-color: #fdf5e6; /* Light beige tint */
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   margin-bottom: 24px;
@@ -18,13 +18,15 @@
   margin-bottom: 12px;
   padding: 12px;
   font-size: 1rem;
-  border: 1px solid #ddd;
+  border: 1px solid #e0e0e0;
   border-radius: 6px;
-  transition: border-color 0.3s ease;
+  transition: box-shadow 0.3s ease;
+  background-color: #fffaf0; /* Off-white background to match list items */
 }
 
 .expense-form input:focus {
-  border-color: #4caf50;
+  border-color: #d2691e; /* Complementary focus color */
+  box-shadow: 0 0 5px rgba(210, 105, 30, 0.4);
   outline: none;
 }
 
@@ -34,14 +36,15 @@
   padding: 12px;
   font-size: 1rem;
   font-weight: bold;
-  background-color: #4caf50;
+  background-color: #d2691e; /* Chocolate color to match the theme */
   color: #fff;
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .expense-form button:hover {
-  background-color: #45a049;
+  background-color: #b3591b; /* Slightly darker on hover */
+  transform: scale(1.02);
 }

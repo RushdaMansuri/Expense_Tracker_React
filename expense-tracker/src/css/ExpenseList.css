@@ -1,5 +1,3 @@
-/* ExpenseList.css */
-
 /* Page background */
 .expense-page {
   background-color: #f5f5dc; /* Light beige */
@@ -9,16 +7,21 @@
   align-items: center;
   color: #333;
   padding: 20px;
+  width: 100%; /* Ensure full width of page */
+  box-sizing: border-box;
 }
 
 /* Container styling */
 .expense-list {
   background-color: #fdf5e6; /* Light beige tint */
-  margin: 0 auto;
-  max-width: 500px;
+  margin: 7em auto; /* Margin-top for spacing from header */
+  width: 100%; /* Full width within its max-width */
+  max-width: 1000px; /* Increased container width */
   padding: 20px;
   border-radius: 8px;
+  border: 1px solid #e0e0e0; /* Border for distinction */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Ensures padding doesn’t affect width */
 }
 
 /* Header within list */
