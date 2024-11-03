@@ -2,20 +2,20 @@
 
 An Expense Tracker application built with React 18 that allows users to record, manage, and visualize their expenses. The project is styled with custom CSS and includes a clean user interface with a beige-themed background for a visually appealing experience.
 
-## Features
+## Features: 
 
 - **Add Expenses**: Add new expenses with descriptions and amounts.
 - **Expense List**: View all recorded expenses in a formatted list with amount and description.
 - **Responsive Design**: Compatible with various screen sizes for an optimal user experience.
 
-## Tech Stack
+## Tech Stack:
 
 - **React**: Used for building the UI components.
 - **JavaScript**: Provides functionality for expense tracking.
 - **CSS**: Custom styling for a clean and elegant look.
 - **HTML**: Basic markup for the structure.
 
-## Components
+## Components:
 
 ### 1. `ExpenseList.js`
 
@@ -28,7 +28,7 @@ This is the main component that displays the list of expenses. It includes:
 
 Separate components to provide a header and footer with complementary colors.
 
-## Setup Instructions
+## Setup Instructions:
 
 1. **Clone the Repository**:
    ```bash
@@ -48,7 +48,7 @@ Separate components to provide a header and footer with complementary colors.
    ```
 5. **Open http://localhost:3000 in your browser to view the app.**
 
-## Folder Structure
+## Folder Structure:
 
 - src/components: Contains ExpenseList.js, Header.js, and Footer.js components.
 - src/css: Custom CSS files for styling components (ExpenseList.css, Header.css, Footer.css).
